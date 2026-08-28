@@ -1,5 +1,6 @@
 #!/bin/bash
-# install.sh — Markdrop 핵심 스크립트를 설치하고, Finder 우클릭용 Quick Action을 생성합니다.
+# 설치.command — Finder 에서 더블클릭해도 실행된다.
+# Markdrop 핵심 스크립트를 설치하고, Finder 우클릭용 Quick Action을 생성합니다.
 
 set -e
 
@@ -290,3 +291,5 @@ echo "   • Quick Action : $WF"
 echo ""
 echo "Finder에서 폴더를 연 뒤, 빈 공간이나 파일을 우클릭 →"
 echo "  [빠른 동작 / Quick Actions] → \"$ACTION_NAME\" 을 선택하세요."
+echo ""
+echo "이 창은 닫으셔도 됩니다."

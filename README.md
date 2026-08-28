@@ -8,17 +8,32 @@ Finder 우클릭 메뉴(빠른 동작)에서 한 번에 실행돼요.
 | 파일 | 설명 |
 |------|------|
 | `markdrop.sh` | 핵심 스크립트 (실제 동작 로직) |
-| `install.sh` | 스크립트를 `~/.markdrop/`에 설치하고, Finder 우클릭용 **빠른 동작(Quick Action)** 을 생성 |
+| `설치.command` | 스크립트를 `~/.markdrop/`에 설치하고, Finder 우클릭용 **빠른 동작(Quick Action)** 을 생성 |
 
 ## 설치
 
+git 없이도 됩니다.
+
+1. 이 페이지 위쪽 초록 **Code** 버튼 → **Download ZIP**
+2. 압축을 풉니다
+3. **`설치.command` 를 더블클릭**합니다
+
+터미널이 알아서 열리고, 끝나면 닫으셔도 됩니다.
+
+> **첫 실행이 막히면** — 인터넷에서 받은 파일이라 macOS 가 한 번 막습니다.
+> `설치.command` 를 **우클릭 → 열기** 를 고르면 실행할지 다시 물어봅니다.
+
+터미널이 편하시면 이렇게 해도 같습니다.
+
 ```bash
-bash install.sh
+bash 설치.command
 ```
 
-설치되는 것:
+설치되는 것은 둘뿐입니다.
 - 핵심 스크립트 → `~/.markdrop/markdrop.sh`
 - 빠른 동작 → `~/Library/Services/Markdrop.workflow`
+
+지울 때는 이 둘을 지우면 끝입니다. 다른 곳은 건드리지 않습니다.
 
 ## 사용법
 
